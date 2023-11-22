@@ -1,56 +1,51 @@
-
-document.querySelector(".sin").addEventListener("click", () => {
-    
-    document.querySelectorAll(".cross").forEach((e) => {
-        e.style.display = "display"
-    })
-    document.querySelector(".vg").style.display = "block";
-        
-    document.querySelector(".small").style.display = "block";
-    
+document.querySelectorAll(".threedts").forEach((e) => {
+  e.addEventListener("click", () => {
+    document.querySelector(".last").style.display = "block";
+  });
 });
-document.querySelector(".vg").addEventListener("click", () => {
-    document.querySelector(".vg").style.display = "none";
-
-})
-document.querySelectorAll(".cross").forEach((e) => {
-    e.addEventListener("click", () => {
-        
-        document.querySelector(".small").style.display = "none";
-        document.querySelector(".hide").style.display = "none";
-    })
-})
-
-document.querySelector(".an-1").addEventListener("click", () => {
-    document.querySelector(".vg").style.display = "block";
-    document.querySelector(".hide").style.display = "block";
-});
-
-document.querySelector(".sgn").addEventListener("click", () => {
-    document.querySelector(".name-inp").style.display = "none";
-    document.querySelector(".m").style.display = "none";
-    document.querySelector(".bl").style.display = "block";
-    document.querySelector(".al").textContent = "Don't have an account yet?";
-    document.querySelector(".terms").textContent = "Forgot Password?";
-    document.querySelector(".terms").style.color = "black";
-})
-
-
-document.querySelector(".con").addEventListener("click", () => {
-    document.querySelector(".c-acc").style.display = "none";
-    document.querySelector(".m").style.display = "none";
-    document.querySelector(".cbtn").innerHTML = "Sign In";
-    document.querySelector(".term").textContent = "Forgot Password ?";
-    document.querySelector(".con").textContent = "or,Create Account";
-
-})
 
 document.querySelector(".jgp").addEventListener("click", () => {
-    document.querySelector(".gp").textContent = "Leave Group"
-})
+  document.querySelector(".gp").textContent = "Leave Group";
+});
 document.querySelector(".join").addEventListener("click", () => {
-   document.querySelector(".join").style.display = "none"
-    document.querySelector(".p").style.display = "block";
-})
+  document.querySelector(".join").style.display = "none";
+  document.querySelector(".p").style.display = "block";
+});
+document.querySelector(".sg").addEventListener("click", () => {
+  console.log("or");
+  document.querySelectorAll(".be").forEach((e) => {
+    e.style.display = "none";
+    document.querySelector(".titles").textContent = "Sign In";
+    document.querySelector(".ch-1").textContent = "Sign In";
+    document.querySelector(".crp").style.visibility = "visible";
+    document.querySelector(".sg").style.display = "none";
+    document.querySelector(".or").textContent = "Don't have an account yet?";
+    document.querySelector(".for").style.display = "block";
+    document.querySelector(".tac").style.display = "none";
+  });
+});
+document.querySelector(".an-1").addEventListener("click", () => {
+  document.querySelector(".lglogin").style.display = "block";
+});
+document.querySelector(".cro").addEventListener("click", () => {
+  document.querySelector(".lglogin").style.display = "none";
+  document.querySelectorAll(".be").forEach((e) => {
+    e.style.display = "block";
+  })
+});
+document.querySelector(".cr").addEventListener("click", () => {
+  document.querySelector(".smlgn").style.display = "none";
+});
+document.querySelector(".sin").addEventListener("click", () => {
+  document.querySelector(".smlgn").style.display = "block";
+});
 
+document.querySelector(".alter").addEventListener("click", () => {
+  document.querySelectorAll(".be").forEach((e) => {
+    e.style.display = "none";
+  });
+  document.querySelector(".ch-1").textContent = "Sign In";
+  document.querySelector(".alter").textContent = "or,Create an account";
+  document.querySelector(".tacd ").innerHTML = "Forgot Password?";
+});
 
